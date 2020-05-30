@@ -17,10 +17,14 @@
 !.config/nvim/
 .config/nvim/*
 !.config/nvim/init.vim
-!.config/nvim/plug-config/**
-!.config/nvim/keys/**
+!.config/nvim/plug-config/
+!.config/nvim/plug-config/*
+!.config/nvim/keys/
+!.config/nvim/keys/*
+!.config/nvim/vim-plug/
 !.config/nvim/vim-plug/*
 !.config/nvim/general/
+!.config/nvim/general/*
 !.config/picom/
 .config/picom/*
 !.config/picom/picom.conf
