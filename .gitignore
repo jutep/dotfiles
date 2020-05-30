@@ -1,5 +1,5 @@
 # ignore everything
-/*
+*
 
 # Whitelist
 !.gitignore
@@ -9,14 +9,21 @@
 !.xinitrc
 
 # config files
+!.config/
+.config/*
+!.config/fish/
+.config/fish/*
 !.config/fish/config.fish
 !.config/nvim/
+.config/nvim/*
+!config/nvim/init.vim
+!.config/nvim/plug-config/
+!.config/nvim/keys/
+!.config/nvim/vim-plug/
+!.config/nvim/general/
+!.config/picom/
+.config/picom/*
 !.config/picom/picom.conf
-!.config/zathura/zathurarc
-
-# and suckless shit
-!software/st/
-!software/dwm/
-!software/dmenu/
-!software/surf/
-!software/tabbed/
+!.config/zathura/
+.config/zathura/*
+!.config/zathrua/zathurarc
