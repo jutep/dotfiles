@@ -1,0 +1,22 @@
+# ignore everything
+/*
+
+# Whitelist
+!.gitignore
+
+# beside of dotfiles
+!.tmux.conf
+!.xinitrc
+
+# config files
+!.config/fish/config.fish
+!.config/nvim/
+!.config/picom/picom.conf
+!.config/zathura/zathurarc
+
+# and suckless shit
+!software/st/
+!software/dwm/
+!software/dmenu/
+!software/surf/
+!software/tabbed/
