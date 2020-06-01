@@ -26,8 +26,6 @@
 !.config/nvim/general/
 !.config/nvim/general/*
 !.config/picom/
-.config/picom/*
-!.config/picom/picom.conf
+!.config/picom/*
 !.config/zathura/
-.config/zathura/*
-!.config/zathrua/zathurarc
+!.config/zathura/*

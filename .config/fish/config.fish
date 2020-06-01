@@ -6,29 +6,46 @@ function chback
   feh --no-fehbg --bg-scale $Wall
 end
 
-###
-# Some aliases to move faster between stuff
-###
-# going to wallpaper folder
-alias wallpaper="cd /home/lutan/Data/Pictures/wallpaper/"
+#################
+# Some aliases  #
+#################
+#########################
+# Programming aliases   #
+#########################
+# python programming
+alias pypro="cd ~/Data/programming/python/"
+alias pykeys="cd ~/Data/programming/python/keystroke-statistics/"
+alias pynextbac="cd ~/Data/programming/python/nextbac/"
+alias pytester="cd ~/Data/programming/python/tester/"
+# game engine programming
+alias cfakehome="cd ~/Data/programming/fakegin/"
+alias cfakegin="cd ~/Data/programming/fakegin/fakegin/"
+alias cfakebox="cd ~/Data/programming/fakegin/sandbox/"
+alias cfakebin="cd ~/Data/programming/fakegin/bin/Debug-linux-x86_64/"
 
+########################
+#   config aliases     #
+########################
 # changing fish conf
-alias fishconf="nvim /home/lutan/.config/fish/config.fish"
+alias fishconf="nvim ~/.config/fish/config.fish"
 
 # changing nvim stuff
-alias nvconf="cd /home/lutan/.config/nvim/"
-
-# python programming
-alias pypro="cd /home/lutan/Data/programming/python/"
+alias nvconf="cd ~/.config/nvim/"
 
 # dwm config
-alias dwmconf="cd /home/lutan/software/dwm/"
+alias dwmconf="cd ~/software/dwm/"
 
 # alias to open nvim faster
 alias nv="nvim"
 
+######################
+#   moving aliases   #
+######################
 # going faster to Downloads folder
-alias down="cd /home/lutan/Downloads/"
+alias down="cd ~/Downloads/"
+
+# going to wallpaper folder
+alias wallpaper="cd ~/Data/Pictures/wallpaper/"
 
 # show neofetch everytime when fish shell opened
 neofetch
