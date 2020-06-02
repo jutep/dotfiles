@@ -3,7 +3,7 @@ let g:mapleader = ","
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
+"set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed 
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -34,12 +34,12 @@ set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
-
-
+set colorcolumn=80                      " at character 70 of every line show a line
+set textwidth=80
+"
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
-" mapping S to substitute stuff
-nnoremap S :%s//g<Left><Left>
+au BufRead,BufNewFile *.md setlocal textwidth=60 "force textwidth in md file
+au BufRead,BufNewFile *.py setlocal textwidth=80 "force textwidth in py file
 
 " You can't stop me
 cmap w!! w !sudo tee %e
