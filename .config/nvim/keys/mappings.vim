@@ -31,5 +31,5 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " renaming
-nnoremap S :%s//g<Left><Left>
+nnoremap S :%s///g<Left><Left><Left>
 

@@ -38,6 +38,15 @@ alias dwmconf="cd ~/software/dwm/"
 # alias to open nvim faster
 alias nv="nvim"
 
+# Sabaki opening fast
+alias Sabaki="cd ~/software/Sabaki/dist/ && ./sabaki-v0.51.1-linux-x64.AppImage"
+
+# Gopanda
+alias GoPanda="cd ~/software && ./GoPanda2.AppImage"
+
+# Pixelorama
+alias Pixelorama="cd ~/software/Pixelorama/Pixelorama/ && ./Pixelorama.x86_64"
+
 ######################
 #   moving aliases   #
 ######################
