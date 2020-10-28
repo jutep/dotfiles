@@ -2,7 +2,7 @@ fish_vi_key_bindings
 
 # changing the background
 function chback 
-  set Wall (find /home/lutan/Data/Pictures/wallpaper/favorites/ -type f | sort -R | tail -1);
+  set Wall (find ~/Data/Pictures/wallpaper/favorites/ -type f | sort -R | tail -1);
   feh --no-fehbg --bg-scale $Wall
 end
 
