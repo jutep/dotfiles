@@ -57,4 +57,7 @@ alias down="cd ~/Downloads/"
 alias wallpaper="cd ~/Data/Pictures/wallpaper/"
 
 # show neofetch everytime when fish shell opened
-neofetch
+#neofetch
+
+#I want always tmux to start when opening  fish shell
+tmux
