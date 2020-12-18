@@ -5,7 +5,7 @@ syntax on
 
 " opening vimwiki
 nmap <Leader>w <Plug>VimwikiIndex
-nmap <Leader>af <Plug>VimwikiUISelect
+nmap <Leader>a <Plug>VimwikiUISelect
 
 " the vimwiki directory
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown'}

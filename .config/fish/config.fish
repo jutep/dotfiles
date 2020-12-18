@@ -1,51 +1,54 @@
 fish_vi_key_bindings
 
-# changing the background
-function chback 
-  set Wall (find ~/Data/Pictures/wallpaper/favorites/ -type f | sort -R | tail -1);
-  feh --no-fehbg --bg-scale $Wall
-end
-
 #################
 # Some aliases  #
 #################
+
+
 #########################
 # Programming aliases   #
 #########################
 # python programming
-alias pypro="cd ~/Data/programming/python/"
-alias pykeys="cd ~/Data/programming/python/keystroke-statistics/"
-alias pynextbac="cd ~/Data/programming/python/nextbac/"
-alias pytester="cd ~/Data/programming/python/tester/"
-# game engine programming
-alias cfakehome="cd ~/Data/programming/fakegin/"
-alias cfakegin="cd ~/Data/programming/fakegin/fakegin/"
-alias cfakebox="cd ~/Data/programming/fakegin/sandbox/"
-alias cfakebin="cd ~/Data/programming/fakegin/bin/Debug-linux-x86_64/"
+alias how2py="how2 -l python"
+alias pynext="cd $HOME/prog/python/nextbac/"
+alias pytester="cd $HOME/prog/python/tester/"
+
+# c programming
+alias how2c="how2 -l c"
+alias hourpr="nvim $HOME/prog/c/hourly/"
+
+# haskell programming
+alias how2hs="how2 -l haskell"
+
+# assembly
+alias how2a="how2 -l assembly"
 
 ########################
 #   config aliases     #
 ########################
-# changing fish conf
-alias fishconf="nvim ~/.config/fish/config.fish"
-
 # changing nvim stuff
 alias nvconf="cd ~/.config/nvim/"
-
-# dwm config
-alias dwmconf="cd ~/software/dwm/"
 
 # alias to open nvim faster
 alias nv="nvim"
 
-# Sabaki opening fast
-alias Sabaki="cd ~/software/Sabaki/dist/ && ./sabaki-v0.51.1-linux-x64.AppImage"
+# fish config
+alias fishconf="nvim $HOME/.config/fish/config.fish"
 
-# Gopanda
-alias GoPanda="cd ~/software && ./GoPanda2.AppImage"
+# bspwm config
+alias bspwmrc="nvim $HOME/.config/bspwm/bspwmrc"
 
-# Pixelorama
-alias Pixelorama="cd ~/software/Pixelorama/Pixelorama/ && ./Pixelorama.x86_64"
+# sxhkd config
+alias sxhkdrc="nvim $HOME/.config/sxhkd/sxhkdrc"
+
+# alacritty config
+alias alacrittyconf="nvim $HOME/.config/alacritty/alacritty.yml"
+
+# polybar config
+alias polyconf="nvim $HOME/.config/polybar/config"
+
+# Xmonad conf
+alias xmonadhs="nvim $HOME/.xmonad/xmonad.hs"
 
 ######################
 #   moving aliases   #
@@ -53,11 +56,13 @@ alias Pixelorama="cd ~/software/Pixelorama/Pixelorama/ && ./Pixelorama.x86_64"
 # going faster to Downloads folder
 alias down="cd ~/Downloads/"
 
-# going to wallpaper folder
-alias wallpaper="cd ~/Data/Pictures/wallpaper/"
+######################
+#  Environment stuff #
+######################
 
-# show neofetch everytime when fish shell opened
-#neofetch
+set PATH $PATH ~/.local/bin
+set PATH $PATH ~/.ghcup/env
+# ghcup-env
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
+test -f /home/jutep/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /home/jutep/.ghcup/bin $PATH
 
-#I want always tmux to start when opening  fish shell
-tmux

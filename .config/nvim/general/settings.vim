@@ -1,5 +1,6 @@
 " set leader key
-let g:mapleader = ","
+nnoremap <SPACE> <Nop>
+let mapleader = " "
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -37,7 +38,6 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set colorcolumn=80                      " at character 70 of every line show a line
 set textwidth=80
 "
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au BufRead,BufNewFile *.md setlocal textwidth=60 "force textwidth in md file
 au BufRead,BufNewFile *.py setlocal textwidth=80 "force textwidth in py file
 
