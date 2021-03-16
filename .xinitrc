@@ -13,5 +13,10 @@ xrandr --output HDMI-0 --rotate left --right-of DVI-D-0 &
 #picom &
 #xmonad
 
+# for fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
 # picom is run in the bspwmrc
 bspwm
