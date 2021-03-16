@@ -17,6 +17,9 @@
 !.config/nvim/
 .config/nvim/*
 !.config/nvim/init.vim
+!.config/nvim/init.lua
+!.config/nvim/colors/
+!.config/nvim/lua/
 !.config/nvim/plug-config/
 !.config/nvim/plug-config/*
 !.config/nvim/keys/

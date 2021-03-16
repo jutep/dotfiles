@@ -15,7 +15,7 @@ alias pytester="cd $HOME/prog/python/tester/"
 
 # c programming
 alias how2c="how2 -l c"
-alias hourpr="nvim $HOME/prog/c/hourly/"
+alias hourpr="nv $HOME/prog/c/hourly/"
 
 # haskell programming
 alias how2hs="how2 -l haskell"
@@ -30,25 +30,26 @@ alias how2a="how2 -l assembly"
 alias nvconf="cd ~/.config/nvim/"
 
 # alias to open nvim faster
-alias nv="nvim"
+#alias nv="nvim"
+alias nv="~/Applications/nvim.appimage"
 
 # fish config
-alias fishconf="nvim $HOME/.config/fish/config.fish"
+alias fishconf="nv $HOME/.config/fish/config.fish"
 
 # bspwm config
-alias bspwmrc="nvim $HOME/.config/bspwm/bspwmrc"
+alias bspwmrc="nv $HOME/.config/bspwm/bspwmrc"
 
 # sxhkd config
-alias sxhkdrc="nvim $HOME/.config/sxhkd/sxhkdrc"
+alias sxhkdrc="nv $HOME/.config/sxhkd/sxhkdrc"
 
 # alacritty config
-alias alacrittyconf="nvim $HOME/.config/alacritty/alacritty.yml"
+alias alacrittyconf="nv $HOME/.config/alacritty/alacritty.yml"
 
 # polybar config
-alias polyconf="nvim $HOME/.config/polybar/config"
+alias polyconf="nv $HOME/.config/polybar/config"
 
 # Xmonad conf
-alias xmonadhs="nvim $HOME/.xmonad/xmonad.hs"
+alias xmonadhs="nv $HOME/.xmonad/xmonad.hs"
 
 ######################
 #   moving aliases   #
@@ -66,3 +67,8 @@ set PATH $PATH ~/.ghcup/env
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 test -f /home/jutep/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /home/jutep/.ghcup/bin $PATH
 
+# no greeting message
+set -U fish_greeting
+
+# setting starship as prompt for fish
+starship init fish | source
