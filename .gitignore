@@ -32,3 +32,4 @@
 !.config/picom/*
 !.config/zathura/
 !.config/zathura/*
+!.config/nvim_old/
