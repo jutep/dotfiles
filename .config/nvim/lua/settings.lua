@@ -5,7 +5,7 @@ vim.o.fileencoding="utf-8"               -- The encoding written to file
 vim.o.ruler=true              		 -- " Show the cursor position all the time
 vim.o.cmdheight=2                        -- More space for displaying messages
 vim.o.splitbelow=true                    -- Horizontal splits will automatically be below
-vim.o.wrap=false
+vim.o.wrap=false                         -- no wrapping at line ending
 vim.o.splitright=true                    -- Vertical splits will automatically be to the right
 vim.o.t_Co='256'                         -- Support 256 colors
 vim.o.smartindent=true                   -- Makes indenting smart
@@ -24,11 +24,22 @@ vim.o.colorcolumn='80'
 vim.o.textwidth=80
 vim.o.termguicolors=true
 vim.o.background='dark'
+vim.o.hidden=true
+vim.o.scrolloff=8                        -- more centered when scrolling
+vim.o.signcolumn="yes"
+
+-- keeping history
+vim.o.swapfile=false                     -- fuck swap files
+vim.o.backup=false
+vim.o.undofile=true
+vim.o.undodir='~/.config/nvim/undodir'
+vim.o.incsearch=true
+
 -- no tabs
-vim.o.tabstop=2                          -- Insert 2 spaces for a tab
-vim.o.shiftwidth=2                       -- Change the number of space characters insertd for indentation
+vim.o.tabstop=4                          -- Insert 2 spaces for a tab
+vim.o.softtabstop=4
+vim.o.shiftwidth=4                       -- Change the number of space characters insertd for indentation
 vim.o.expandtab=true                     -- Converts tabs to spaces
 vim.o.smarttab=true
 -- for vimwiki
 vim.o.compatible=false
-

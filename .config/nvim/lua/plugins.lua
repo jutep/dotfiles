@@ -51,11 +51,18 @@ return require('packer').startup(function()
   use 'puremourning/vimspector'
   use 'szw/vim-maximizer'
 
-  -- auto sessions
-  use 'rmagatti/auto-session'
 
   -- vim-ultest
   use { "rcarriga/vim-ultest", requires = {"janko/vim-test"}, run = ":UpdateRemotePlugins" }
+
+  -- cheat.sh
+  use 'dbeniamine/cheat.sh-vim'
+
+  -- undotree
+  use 'mbbill/undotree'
+
+  -- auto sessions
+  -- use 'rmagatti/auto-session'
 
   -- markdown preview (not working)
   -- use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
