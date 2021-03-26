@@ -1,0 +1,33 @@
+#! /bin/sh
+
+killall picom
+picom &
+fcitx -d &
+kdeconnectd &
+killall sxhkd
+sxhkd &
+$HOME/.config/polybar/launch.sh 
+nitrogen --restore &
+killall Alacritty
+bspc rule -a Alacritty -o desktop=I
+alacritty &
+bspc rule -a Alacritty -o state= floating rectangle=500x350+750+20 desktop=IV
+alacritty -e hourly &
+bspc rule -a Alacritty -o state= floating rectangle=500x350+750+20 desktop=V
+alacritty -e keepassxc-cli open Database.kdbx &
+killall firefox
+bspc rule -a firefox -o state=floating rectangle=700x700+500+140 desktop=IV
+firefox &
+
+bspc monitor HDMI-0 -d IV V VI
+bspc monitor DVI-D-0 -d  I II III
+
+bspc config border_width         3
+bspc config window_gap           5
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Zathura state=tiled
+
